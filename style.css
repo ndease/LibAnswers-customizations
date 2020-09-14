@@ -292,7 +292,7 @@ background-color:white !important;
 background-image:none !important;
 border-width:1px;
 border-color:black;
-background-color:#0090D0 !important;
+background-color:#0C77D4 !important;
 color: white !important;
 height:40px;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
@@ -833,7 +833,7 @@ a i {
 }
 .dropdown-menu>li>a:hover {
     color: white !important;
-    background-color: #0090D0 !important;
+    background-color: #0C77D4 !important;
 }
 
 .s-la-box-content {
@@ -930,7 +930,7 @@ color:#FFB900;
 }
 
  .dropdown-menu {
-background-color: #fff !important; 
+background-color: #fff !important;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
