@@ -2,7 +2,9 @@
 
 
 <style>
-
+:root{
+  font-size:1rem;
+}
 /*fix pratt headings*/
 
 h1{
@@ -68,7 +70,7 @@ padding:0px !important;
 
 }
 .logo-style{
-	height:3.2rem;
+	height:2.1rem;
   margin-top:7px;
 }
 
@@ -106,7 +108,7 @@ padding-bottom:5px;
 }
 
 
-@media(min-width:1130px){
+@media(min-width:1350px){
 .navbar-main{
 margin-right:10%;
 }
@@ -163,7 +165,7 @@ display:none;
 .s-la-color-bars {
 background-color:white !important;
 background-image: none !important;
-font-size: 1.3em;
+font-size: 1rem;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
@@ -243,7 +245,7 @@ border-width:0px !important;
 
 .input-group-addon {
     padding: 0px;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1;
     color: #555;
@@ -254,7 +256,7 @@ border-width:0px !important;
 }
 
 .fa-search{
-	font-size:20px;
+	font-size:1.2rem;
 }
 
 .breadcrumb{
@@ -299,7 +301,7 @@ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
 .quick-tools {
-  font-size:13px;
+  font-size:1rem;
 }
 .quick-tools a{
   color:white !important;
@@ -387,7 +389,7 @@ footer{
 
 .footer-links{
 text-align:left;
-font-size:1.2em !important;
+font-size:1.05rem !important;
 line-height:1.5em !important;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 
@@ -533,20 +535,20 @@ pre {
   letter-spacing: normal;
 }
 
-/*override LibAnswers poor font choices*/
+/*override LibAnswers font choices*/
 body{
   font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-size:14px !important;
+  font-size:1rem !important;
 }
 
 .s-la-box-title h2 {
-    font-size: 20px !important;
+    font-size: 1.3rem !important;
     margin: 5px;
     line-height: 1.7 !important;
 }
 
 body, footer{
-  font-size:14px !important;
+  font-size:1rem !important;
 
 }
 
@@ -582,7 +584,7 @@ h1 {
 }
 
 h2{
-  font-size: 16px !important;
+  font-size: 1rem !important;
   font-weight:500 !important;
   line-height:1.2 !important;
   color:inherit !important;
@@ -886,7 +888,7 @@ color:#FFB900;
 }
 
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
-@media (max-width: 1005px) {
+@media (max-width: 1080px) {
         .navbar-header {
                 float: none;
         }
