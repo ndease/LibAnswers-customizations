@@ -107,12 +107,6 @@ padding-bottom:5px;
 }
 }
 
-
-@media(min-width:1350px){
-.navbar-main{
-margin-right:10%;
-}
-}
 .navbar .navbar-collapse {
     text-align: center;
 }
@@ -888,7 +882,7 @@ color:#FFB900;
 }
 
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
-@media (max-width: 1080px) {
+@media (max-width: 1126px) {
         .navbar-header {
                 float: none;
         }
