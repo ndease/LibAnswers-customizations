@@ -279,6 +279,11 @@ h1#s-la-public-header-title {
     font-size: 2.8em;
     text-align:center;
 }
+
+h1.s-la-public-header-title {
+    text-align: center;
+}
+
 .s-la-public-header-text {
     float: none !important;
     margin-bottom: 20px;
