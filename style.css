@@ -55,7 +55,7 @@ background-color:black;
 }
 
 p {
-    font-size: 1.3em !important;
+    font-size: 1.3em;
     margin: 1.125em 0 !important;
     line-height: 1.55em !important;
     letter-spacing: normal !important;
@@ -279,11 +279,9 @@ h1#s-la-public-header-title {
     font-size: 2.8em;
     text-align:center;
 }
-
 h1.s-la-public-header-title {
     text-align: center;
 }
-
 .s-la-public-header-text {
     float: none !important;
     margin-bottom: 20px;
@@ -938,4 +936,43 @@ background-color: #fff !important;
     max-height: none !important;
 }
 
+.lib-site-alert{
+  position:relative;
+  width:100%;
+  top:60px;
+  text-align: center;
+  background-color: #FFB900;
+  color:black;
+  display:none;
+}
+
+.lib-site-alert p{
+    font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+.lib-site-alert i {
+  padding-top:1em;
+}
+
+.lib-site-alert p > a{
+  text-decoration: underline;
+  color:black;
+  border:none;
+  box-shadow:none;
+}
+.lib-site-alert p > a:hover {
+color: black;
+background-color: transparent;
+}
+
+#s-lg-box-27831781{
+background-color:transparent;
+margin:0;
+}
+
+.h5.lib-site-alert {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 </style>
