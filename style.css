@@ -317,6 +317,18 @@ color:black;
     border-color: none;
 }
 
+  /* || Pratt typography */
+
+  @font-face {
+      font-family: "GraphikMedium";
+      src: url(https://www.pratt.edu/wp-content/themes/pratt-main/dist/fonts/Graphik-Bold-Web.woff2) format("woff2");
+  }
+
+  @font-face {
+      font-family: "GraphikRegular";
+      src: url(https://www.pratt.edu/wp-content/themes/pratt-main/dist/fonts/Graphik-Regular-Web.woff2) format("woff2");
+  }
+
 /* ==========================================================================
    Typography
    ========================================================================== */
