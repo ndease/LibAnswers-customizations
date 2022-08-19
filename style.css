@@ -5,37 +5,6 @@
 :root{
   font-size:1rem;
 }
-/*fix pratt headings*/
-
-h1{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-}
-
-h2{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-}
-
-h3{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-}
-
-h4{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-}
-
-h5{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-}
-
-h6{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-}
 
 body{
 margin-left:0px !important;
@@ -54,100 +23,108 @@ background-color:black;
     background-size: cover;
 }
 
+  .navbar-brand>img {
+      display: inline-block;
+  }
+
+  .logo-style{
+  	max-height:25px;
+    margin-top:-10px;
+  }
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: #FFB900;
+}
+  .navbar-nav{
+  	padding:0;
+  	margin:0;
+  }
+
+  .navbar .navbar-default .navbar-nav .nav-link {
+      letter-spacing: normal;
+  }
+
+  .navbar{
+        padding: 0.5rem 1rem;
+        background-color:black;
+        border-bottom:1px solid white;
+  }
+
+  .navbar .navbar-nav {
+      float: none;
+  display:inline-block;
+  }
+
+  @media(max-width:1005px){
+  .navbar .navbar-nav{
+  display: block;
+  }
+  .navbar{
+  padding-bottom:5px;
+  }
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+  a.nav-link{
+    font-size:1.25em;
+    font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
+  	padding-top:10px;
+  	padding-bottom:10px;
+  }
+
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+}
+
+  .s-la-navbrowse {
+  display:none;
+  }
+  .navbar-text {
+      display: none;
+  }
+
+  .navbar-default .navbar-brand{
+    font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
+    font-size:1.8em;
+    color:white;
+  }
+
+  .navbar-default .navbar-brand:focus, .navbar-default  a.navbar-brand:hover{
+    color:white;
+  }
+  nav .container-fluid{
+    padding-left:0;
+    padding-right:0;
+  }
+
+/*Fixing the navbar logo */
+@media only screen and (max-width: 450px){
+.navbar-header > a.navbar-brand {
+    font-size: 1.2em;
+}
+.navbar-header > img.logo-style{
+    height: 1em;
+}
+}
+
+  @media screen and (max-width: 1200px) {
+    nav a.navbar-brand{
+      position: absolute;
+      left: 2%;
+    }
+  }
+
 p {
     font-size: 1.3em;
     margin: 1.125em 0 !important;
     line-height: 1.55em !important;
     letter-spacing: normal !important;
     font-family: "LyonRegular", Helvetica, Arial, sans-serif;
-}
-
-.navbar-brand{
-margin:0px !important;
-float:none !important;
-padding-top:10px !important;
-padding:0px !important;
-
-}
-.logo-style{
-	height:2.1rem;
-  margin-top:7px;
-}
-
-ul.nav a:hover { color: #FFB900 !important; }
-
-.navbar-nav{
-	padding:0;
-	margin:0;
-}
-
-.navbar-custom .navbar-nav .nav-link {
-    letter-spacing: .08em;
-}
-
-@media (max-width:800px) {
-.logo-style{
-margin-left:5px;
-}
-}
-
-
-
-.navbar .navbar-nav {
-    float: none;
-display:inline-block;
-}
-
-@media(max-width:1005px){
-.navbar .navbar-nav{
-display: block;
-}
-.navbar{
-padding-bottom:5px;
-}
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-
-.nav-account{
-  font-size:1.08em !important;
-  margin-top:5px !important;
-}
-.nav-link{
-  font-size:1.08em !important;
-	padding-top:10px;
-	padding-bottom:10px;
-}
-.nav-item{
-color:white;
-margin-left:.2em !important;
-margin-right:.2em !important;
-text-decoration: none !important;
-text-transform:none;
-font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color:#FFB900;
-    background-color:transparent !important;
-}
-
-.navbar-default{
-	border-width:0px;
-	border-color: transparent;
-}
-
-.navbar-custom{
-background-color:rgba(30,30,30,0.88) !important;
-    border-bottom: 5px solid #FFB900;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: white;
-font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
 .s-la-navbrowse {
@@ -230,9 +207,6 @@ border-width:0px !important;
      padding: 0px
 }
 
-.navbar-default .navbar-toggle {
-    border-color: rgba(255, 255, 255, 0.1);
-}
 .btn{
 	border-radius:0px;
 }
@@ -297,122 +271,36 @@ height:40px;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
-.quick-tools {
-  font-size:1rem;
-}
-.quick-tools a{
-  color:white !important;
-}
-.quick-tools a:hover{
-  color:#FFB900 !important;
-}
-
-@media (max-width:1217px) {
-  .quick-tools {
-display:none;
-  }
-}
-
 footer{
 	width:100%;
+  background-color: #ffce2e;
 	padding:25px;
 	line-height:1.6em;
 
 }
 
-
-.logo {
-    display: inline-block;
-	margin-top:.3em;
+footer li{
+  list-style: none;
 }
 
-
-/* line 22, ../sass/_navigation.scss */
-
-.logo a {
-    background: url(https://library.pratt.edu/img/logo-white.png) no-repeat;
-    background-size: 90px 30px;
-    display: block;
-    height: 30px;
-    width: 90px;
-    overflow: hidden;
-    text-indent: -1999px;
-    z-index: 1000;
-    background-repeat: no-repeat;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-property: height;
-    -moz-transition-property: height;
-    -o-transition-property: height;
-    transition-property: height;
-    -webkit-transition-property: width;
-    -moz-transition-property: width;
-    -o-transition-property: width;
-    transition-property: width;
-    -webkit-transition-property: margin;
-    -moz-transition-property: margin;
-    -o-transition-property: margin;
-    transition-property: margin;
+footer  {
+  width:  100%;
+  padding:  25px;
+  line-height: 1.5em;
+  font-size:.8em;
+  background-color: #ffce2e;
+  color: #000;
+  margin-top:3em;
 }
 
-
-/* line 36, ../sass/_navigation.scss */
-.svg .logo a {
-  background-image: url(https://library.pratt.edu/img/logo-white.png);
+footer a{
+color:black;
+text-decoration: underline;
 }
 
-/* line 39, ../sass/_navigation.scss */
-.logo a:hover {
-  background-image: url(https://library.pratt.edu/img/logo-gold.png);
-}
-/* line 41, ../sass/_navigation.scss */
-.svg .logo a:hover {
-  background-image: url(https://library.pratt.edu/img/logo-gold.png);
-}
-
-/* line 67, ../sass/_navigation.scss */
-.ie8 .logo a, .lt-ie8 .logo a {
-  background-image: url(https://library.pratt.edu/img/logo-black-ie.png);
-  width: 90px;
-  height: 30px;
-  background-size: auto;
-}
-/* line 72, ../sass/_navigation.scss */
-.ie8 .logo a:hover, .lt-ie8 .logo a:hover {
-  background-image: url(https://library.pratt.edu/img/logo-gold-ie.png);
-}
-
-.footer-links{
-text-align:left;
-font-size:1.05rem !important;
-line-height:1.5em !important;
-font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-
-}
-
-.account {
-  color:white !important;
-  border-color:white !important;
-  border-style:solid;
-  border-width:1px !important;
-  border-radius:50px !important;
-  padding:10px !important;
-}
-
-.account:hover {
-  color:#FFB900!important;
-  border-color:#FFB900 !important;
-  border-style:solid;
-  border-width:1px !important;
-  border-radius:50px !important;
-
-}
-
-.navbar-right {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+footer a:hover{
+text-decoration: none;
+color:black;
 }
 
 .hide {
@@ -429,395 +317,286 @@ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
     border-color: none;
 }
 
-/*Pratt Style */
-
-font-family: 'ApercuBold';
-  src: url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot/fonts/apercu-bold-webfont.eot");
-  src: url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.svg#ApercuBold") format("svg"), url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ApercuBoldItalic';
-  src: url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot");
-  src: url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.svg#ApercuBoldItalic") format("svg"), url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/apercu-bolditalic-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ApercuItalic';
-  src: url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot");
-  src: url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.svg#ApercuItalic") format("svg"), url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/apercu-italic-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ApercuRegular';
-  src: url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot");
-  src: url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.svg#ApercuRegular") format("svg"), url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/apercu-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ApercuMedium';
-  src: url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot");
-  src: url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.svg#ApercuMedium") format("svg"), url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/apercu-medium-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ApercuMediumItalic';
-  src: url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot");
-  src: url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.svg#ApercuMediumItalic") format("svg"), url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/apercu-medium-italic-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Entypo';
-  src: url("https://www.pratt.edu/assets/fonts/entypo.eot");
-  src: url("https://www.pratt.edu/assets/fonts/entypo.eot?#iefix") format("embedded-opentype"), url("https://www.pratt.edu/assets/fonts/entypo.svg#Entypo") format("svg"), url("https://www.pratt.edu/assets/fonts/entypo.woff") format("woff"), url("https://www.pratt.edu/assets/fonts/entypo.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-	font-family: "LyonRegular";
-	src: url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot");
-	src: url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.eot?#iefix") format("embedded-opentype"),
-		 url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff") format("woff"),
-		 url("https://www.pratt.edu/assets/fonts/LyonText-Regular-Web.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-	}
-
-@font-face {
-	font-family: "LyonItalic";
-	src: url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot");
-	src: url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),
-		 url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff") format("woff"),
-		 url("https://www.pratt.edu/assets/fonts/LyonText-RegularItalic-Web.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-	}
-
-@font-face {
-	font-family: "LyonBold";
-	src: url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot");
-	src: url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.eot?#iefix") format("embedded-opentype"),
-		 url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff") format("woff"),
-		 url("https://www.pratt.edu/assets/fonts/LyonText-Bold-Web.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-	}
-
 /* ==========================================================================
    Typography
    ========================================================================== */
-/**
- * Set 1 unit of vertical rhythm on the top and bottom margin.
- */
-/* line 187, ../sass/_normalize.scss */
-p,
-pre {
-  font-family: "LyonRegular", Helvetica, Arial, sans-serif;
-  margin: 1.125em 0;
-  line-height: 1.55em;
-  font-size: 1.04em;
-  letter-spacing: normal;
-}
 
-/*override LibAnswers font choices*/
-body{
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
-  font-size:1rem !important;
-}
-
-.s-la-box-title h2 {
-    font-size: 1.3rem !important;
-    margin: 5px;
-    line-height: 1.7 !important;
-}
-
-body, footer{
-  font-size:1rem !important;
-
-}
-
-/* line 192, ../sass/_normalize.scss */
-blockquote {
-  /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 40px;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 203, ../sass/_normalize.scss */
-h1 {
-  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
-/*  font-size: 3em;*/
-  font-size: 2.75em;
-  line-height: 1.5em;
-  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.13636em;
-  margin-bottom: 0.13636em;
-  line-height: 1em;
-/* Added by Heein Park */
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-}
-@media (max-width: 47.938em) {
-  /* line 203, ../sass/_normalize.scss */
-  h1 {
-    font-size: 2.25em;
+  body{
+    font-size:1rem !important;
   }
+
+  .s-la-box-title h2 {
+      font-size: 1.2rem !important;
+      margin: 5px;
+      line-height: 1.7 !important;
+  }
+
+  h1,  h2,  h3,  h4,  h5,  h6  {
+    font-family: 'GraphikRegular', Helvetica, Arial, sans-serif;
+    font-weight:  500;
 }
-
-h2{
-  font-size: 1rem !important;
-  font-weight:500 !important;
-  line-height:1.2 !important;
-  color:inherit !important;
-  margin-top:0 !important;
-  letter-spacing: 0.09em !important;
+p,  pre  {
+    font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
+    margin:  1.125em 0;
+    line-height:  1.7em;
+    font-size:  1.04em;
+    letter-spacing:  normal;
 }
-/* line 221, ../sass/_normalize.scss */
-
-/*
-h2 {
-  font-size: 2.25em;
-  line-height: 1.09091em;
-  margin-top: 0.13636em;
-  margin-bottom: 0.13636em;
-  line-height: 1.25em;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+p a  {
+    color:  #000000;
+    padding:  2px;
+    border-bottom:  1px solid black;
+    border-bottom-width:  1px;
+    border-bottom-style:  solid;
+    border-bottom-color:  black;
+    box-shadow:  inset 0 -1px 0 black;
+    text-decoration:  none;
 }
-
-/* line 231, ../sass/_normalize.scss */
-h3 {
-  font-size: 2.25em;
-  line-height: 1.5em;
-  margin-top: 0.15em;
-  margin-bottom: 0.15em;
-  line-height: 1.25em ;
-  letter-spacing: normal;
+p a:hover  {
+    color:  white;
+    background-color: black;
+    padding:  2px;
+    transition:  background .15s cubic-bezier(.33,  .66,  .66,  1);
+    transition-property:  background;
+    transition-duration:  0.15s;
+    transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    transition-delay:  0s;
 }
-
-/* line 241, ../sass/_normalize.scss */
-h4 {
-  font-size: 1em;
-  line-height: 2em;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
-  line-height: 1.25em;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+blockquote  {
+    margin:  1.5em 40px;
 }
-
-/* line 251, ../sass/_normalize.scss */
-.h5, h5 {
-  font-size: 1.3em;
-  line-height: 1.2em;
-  margin-top: 0.12em;
-  margin-bottom: 0.12em;
-  line-height: 1.25em;
+h1  {
+    font-size:  2.75em;
+    line-height:  1.5em;
+    margin-top:  0.13636em;
+    margin-bottom:  0.13636em;
+    line-height:  1em;
+    text-transform:  uppercase;
+    letter-spacing:  0.09em;
 }
+@media (max-width: 47.938em)  {
+    h1  {
+    font-size:  2.25em;
+}
+}
+h2  {
+    font-size:  1.98rem;
+    font-weight:  500;
+    line-height:  1.2;
+    color:  inherit;
+    margin-top:  0;
+    letter-spacing:  0.09em;
 
-
-.h6, h6 {
+}
+h3  {
+    font-size:  1.5em;
+    line-height:  1.5em;
+    margin-top:  0.15em;
+    margin-bottom:  0.15em;
+    line-height:  1.25em;
+    letter-spacing:  normal;
+}
+@media (max-width: 47.938em)  {
+    h3  {
+    font-size:  1.5em;
+}
+}
+h4  {
+    font-size:  1em;
+    line-height:  2em;
+    margin-top:  0.25em;
+    margin-bottom:  0.25em;
+    line-height:  1.25em;
+    letter-spacing:  0.09em;
+    text-transform:  uppercase;
+}
+@media (max-width: 47.938em)  {
+    h4  {
     font-size:  1em;
 }
-/* line 261, ../sass/_normalize.scss */
-h6 {
-  font-size: 1.2em;
-  line-height: 1.57895em ;
-  margin-top: 0.15789em;
-  margin-bottom: 0.15789em;
-  line-height: 1.25em;
+}
+h5  {
+    font-size:  1.04em;
+    line-height:  1.2em;
+    margin-top:  0.12em;
+    margin-bottom:  0.12em;
+    line-height:  1.25em;
+}
+@media (max-width: 47.938em)  {
+    h5  {
+    font-size:  0.9375em;
+}
+}
+h6  {
+    font-size:  0.95em;
+    line-height:  1.57895em;
+    margin-top:  0.15789em;
+    margin-bottom:  0.15789em;
+    line-height:  1.25em;
+}
+@media (max-width: 47.938em)  {
+    h6  {
+    font-size:  0.7125em;
+}
+}
+abbr[title]  {
+    border-bottom:  1px dotted;
+}
+b,  strong  {
+    font-family:  "GraphikMedium",  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
+}
+dfn  {
+    font-style:  italic;
+}
+hr  {
+    -webkit-box-sizing:  content-box;
+    -moz-box-sizing:  content-box;
+    box-sizing:  content-box;
+    background-color:  #8c8c8c;
+}
+mark  {
+    background:  #ff0;
+    color:  #000;
+}
+code,  kbd,  pre,  samp  {
+    font-family:  monospace,  serif;
+    _font-family:  'courier new',  monospace;
+    font-size:  1em;
+}
+pre  {
+    white-space:  pre;
+    white-space:  pre-wrap;
+    word-wrap:  break-word;
+}
+q  {
+    quotes:  "\201C" "\201D" "\2018" "\2019";
+}
+small  {
+    font-size:  80%;
+}
+sub,  sup  {
+    font-size:  75%;
+    line-height:  0;
+    position:  relative;
+    vertical-align:  baseline;
+}
+sup  {
+    top:  -0.5em;
+}
+sub  {
+    bottom:  -0.25em;
+}
+dl,  menu,  ol,  ul  {
+    margin:  1.3em 0;
+}
+dd  {
+    margin:  0 0 0 40px;
+}
+menu,  ol,  ul  {
+    padding:  0 0 0 40px;
+}
+nav ul,  nav ol  {
+    list-style:  none;
+    list-style-image:  none;
+}
+p  {
+    font-size:  1em;
+}
+a  {
+    color:  black;
+    -webkit-transition-property:  color;
+    -moz-transition-property:  color;
+    -o-transition-property:  color;
+    transition-property:  color;
+    -webkit-transition-duration:  0.2s;
+    -moz-transition-duration:  0.2s;
+    -o-transition-duration:  0.2s;
+    transition-duration:  0.2s;
+    word-wrap:  break-word;
+    font-size:  1em;
+    text-decoration:  none;
+    letter-spacing:  normal;
 }
 
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 276, ../sass/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
+a:focus, a:hover {
+    color: black;
 }
 
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 285, ../sass/_normalize.scss */
+  /* ==========================================================================
+     Lists
+     ========================================================================== */
+  /**
+   * Address margins set differently in IE 6/7.
+   */
+  /* line 398, ../sass/_normalize.scss */
+  dl,
+  menu,
+  ol,
+  ul {
+    margin: 0;
+  }
 
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 293, ../sass/_normalize.scss */
-dfn {
-  font-style: italic;
+  ul > li > ul {
+    margin: 1em;
 }
 
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 301, ../sass/_normalize.scss */
-hr {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  color:black;
-  background-color:black;
+  /* line 412, ../sass/_normalize.scss */
+  dd {
+    margin: 0 0 0 40px;
+  }
 
-}
+  /**
+   * Address paddings set differently in IE 6/7.
+   */
+  /* line 422, ../sass/_normalize.scss */
+  menu,
+  ol,
+  ul {
+    padding: 0 0 0 0px;
+  }
 
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 310, ../sass/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
+  /**
+   * Correct list images handled incorrectly in IE 7.
+   */
+  /* line 433, ../sass/_normalize.scss */
+  nav ul,
+  nav ol {
+    list-style: none;
+    list-style-image: none;
+  }
 
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 322, ../sass/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
+  p{
+  font-size:1em;
+  }
 
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 339, ../sass/_normalize.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  a {
+      color: black;
+      -webkit-transition-property: color;
+      -moz-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      word-wrap: break-word;
+      font-size: 1em;
+      text-decoration: none;
+      letter-spacing: normal;
+  }
 
-/**
- * Set consistent quote types.
- */
-/* line 354, ../sass/_normalize.scss */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 362, ../sass/_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 371, ../sass/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 378, ../sass/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 382, ../sass/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-/**
- * Address margins set differently in IE 6/7.
- */
-/* line 398, ../sass/_normalize.scss */
-dl,
-menu,
-ol,
-ul {
-  margin: 0;
-}
-
-/* line 412, ../sass/_normalize.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/**
- * Address paddings set differently in IE 6/7.
- */
-/* line 422, ../sass/_normalize.scss */
-menu,
-ol,
-ul {
-  padding: 0 0 0 0px;
-}
-
-/**
- * Correct list images handled incorrectly in IE 7.
- */
-/* line 433, ../sass/_normalize.scss */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-p{
-font-size:1em;
-}
-
-a {
-    color: #0C77D4;
-    -webkit-transition-property: color;
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    word-wrap: break-word;
-    font-size: 1em;
-    text-decoration: none;
-    letter-spacing: normal;
-}
 
 a i {
     text-decoration: none;
-    color: #0C77D4;
+    color: black;
 }
 
 .fa-twitter-square {
-    color: #0C77D4;
+    color: black;
 }
 
 .fa-facebook-square {
-    color: #0C77D4;
+    color: black;
 }
 
 @media (max-width: 1170px){
@@ -883,7 +662,9 @@ color:#FFB900;
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
-
+.navbar-default .navbar-toggle{
+  border-color:transparent;
+}
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
 @media (max-width: 1200px) {
         .navbar-header {
