@@ -769,8 +769,8 @@ font-size:1.1em;
 text-decoration:underline;
 }
 
-.s-la-faq-listing-meta{
-font-size:.8em;
+div.s-la-faq-listing-meta > span {
+    font-size: .8em;
 }
 
 li.s-la-faq-listing {
