@@ -764,6 +764,20 @@ background-color:transparent;
 margin:0;
 }
 
+div.s-la-faq-listing-q > a{
+font-size:1.1em;
+text-decoration:underline;
+}
+
+s-la-faq-listing-meta{
+font-size:.8em;
+}
+
+li.s-la-faq-listing {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
 .h5.lib-site-alert {
     margin-top: 0;
     margin-bottom: 0;
