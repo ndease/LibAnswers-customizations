@@ -10,6 +10,16 @@ body{
 margin-left:0px !important;
 }
 
+a#s-la-public-skiplink:focus {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+
+
 header{
     position: relative;
     width: 100%;
