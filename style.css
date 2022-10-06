@@ -613,6 +613,10 @@ a i {
     color: black;
 }
 
+a.s-la-content-link-a{
+    text-decoration: underline;
+}
+
 .fa-twitter-square {
     color: black;
 }
