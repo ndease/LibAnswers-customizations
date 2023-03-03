@@ -798,4 +798,9 @@ li.s-la-faq-listing {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.s-la-box-content h3 {
+    font-size: 1.3em;
+    margin: 1em;
+}
 </style>
